@@ -1,0 +1,11 @@
+package singleton.good;
+
+public class Main {
+    public static void main(String[] args) {
+        Logger l1=Logger.getInstance();
+        Logger l2=Logger.getInstance();
+        l1.log("User logged in");
+        l2.log("Error occured.");
+        System.out.println(l1==l2);
+    }
+}
